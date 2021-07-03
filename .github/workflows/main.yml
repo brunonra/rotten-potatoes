@@ -55,7 +55,7 @@ jobs:
           curl -L -O https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh
           chmod +x install.sh
           ./install.sh --accept-all-defaults
-          echo "::add-path::/home/runner/bin"
+          echo "::add-path::/home/runner/bin" >> $GITHUB_ENV
           exec -l $SHELL
       - name: Deploy Mongo
         uses: Azure/k8s-deploy@v1
