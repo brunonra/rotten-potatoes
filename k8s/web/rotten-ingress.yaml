@@ -22,4 +22,4 @@ spec:
           service:
             name: movies-service
             port:
-              number: 30000
+              number: 80
