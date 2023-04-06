@@ -15,7 +15,8 @@ spec:
         - name: movies
           image: tiobaca/rotten-potatos:v1
           ports:
-            - containerPort: 5000
+            - containerPort: 80
+#            - containerPort: 5000
           env: 
             - name: MONGODB_DB
               value: admin
